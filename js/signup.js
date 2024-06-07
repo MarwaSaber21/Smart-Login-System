@@ -4,7 +4,9 @@ let passwordInput = document.getElementById("pass");
 let signupBtn = document.getElementById("signupBtn");
 let errorMess = document.getElementById("errorMess");
 let userList = [];
+if(localStorage.getItem("users")){
 userList = JSON.parse(localStorage.getItem("users"));
+}
 function addUser() {
   let user = {
     userName: userNameInput.value,
