@@ -2,8 +2,9 @@ let emailLogInpt = document.getElementById("emailLog");
 let passwordLogInpt = document.getElementById("passwordLog");
 let errorLogMess = document.getElementById("errorLogMess");
 let usersList = [];
-usersList = JSON.parse(localStorage.getItem("users"));
-
+if (localStorage.getItem("users")) {
+  usersList = JSON.parse(localStorage.getItem("users"));
+}
 var loginBtn = document.getElementById("login");
 loginBtn.addEventListener("click", function (e) {
   if (checkValidation()) {
