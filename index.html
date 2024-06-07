@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ICON-->
+    <link rel="icon" href="./images/images.jpg">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet" />
+
+    <!---font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!----wow js-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!----sweet alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
+    <title>Login</title>
+</head>
+
+<body>
+
+    <section class="log">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="mybg col-md-6">
+                    <img src="images/6184159_3094350.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-6 ">
+                    <div class="animate__animated animate__bounceInDown card text-center p-3">
+                        <h1>Smart Login System
+                        </h1>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i
+                                    class="fa-solid fa-envelope text-white"></i></span>
+                            <input id="emailLog" type="email" class="mytext form-control "
+                                placeholder="Enter your email" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i
+                                    class="text-white fa-solid fa-key"></i></span>
+                            <input id="passwordLog" type="password"
+                                class="mytext form-control" placeholder="Enter your password"
+                                aria-describedby="basic-addon1">
+                        </div>
+
+                        <p id="errorLogMess"></p>
+                        <button id="login" class="btn my-4">Login</button>
+                        <span class="text-light">Don’t have an account? <a href="./signup.html">Sign Up</a></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

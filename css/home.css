@@ -1,0 +1,75 @@
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-image: url(../images/pexels-minan1398-1131458.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+.log {
+  height: 100vh;
+}
+h1 {
+  color: #17a2b8;
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+.home {
+}
+.card {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  margin-top: 20px;
+  background: rgb(58, 180, 93);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 180, 93, 1) 0%,
+    rgba(86, 169, 144, 1) 20%,
+    rgba(124, 154, 75, 1) 75%
+  );
+}
+
+p {
+  color: #0e2e33;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+}
+.navbar {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  color: #0c0b0b !important;
+}
+.btn {
+  color: #0c0b0b !important;
+  opacity: 0.6;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: bisque;
+  border: 2px solid #e9b005;
+}
+.btn:hover {
+  background-color: #e9b005;
+  opacity: 1;
+}
+.navbar-toggler {
+  color: #ffffffad;
+  opacity: 0.5;
+}
+
+.home .container {
+  height: 75vh;
+
+  margin: auto;
+}
+
+/*media query*/
+@media (max-width: 992px) {
+  .btn {
+    width: 100%;
+  }
+  .card {
+    width: 100% !important;
+  }
+}

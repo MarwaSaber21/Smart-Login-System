@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ICON-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/signup.css" rel="stylesheet" />
+    <!---font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!----wow js-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!----sweet alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
+    <title>Sign Up</title>
+</head>
+
+<body>
+
+    <section class="log">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="./images/20602854_6325239.svg" alt="">
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="animate__animated animate__bounceInDown card text-center p-3 w-100">
+                        <h1>Smart Login System
+                        </h1>
+                        <div class="input-group my-3">
+                            <span class="input-group-text" id="basic-addon1"> <i
+                                    class="mytext fa-solid fa-user"></i></span>
+                            <input id="userName" type="text" class="mytext form-control" placeholder="Enter your Name"
+                                aria-describedby="basic-addon1" data-bs-custom-class="custom-popover"
+                                data-toggle="popover" data-bs-trigger="hover focus"
+                                data-bs-content="Username must be 3 characters or more." data-bs-placement="top">
+
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i
+                                    class="fa-solid fa-envelope text-white"></i></span>
+                            <input id="email" type="email" class="mytext form-control " placeholder="Enter your email"
+                                aria-describedby="basic-addon1" data-bs-custom-class="custom-popover"
+                                data-toggle="popover" data-bs-trigger="hover focus"
+                                data-bs-content="Please enter a valid email address." data-bs-placement="top">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i
+                                    class="mytext fa-solid fa-key"></i></span>
+                            <input id="pass" type="password" class="mytext form-control"
+                                placeholder="Enter your password" aria-describedby="basic-addon1"
+                                data-bs-custom-class="custom-popover" data-toggle="popover"
+                                data-bs-trigger="hover focus"
+                                data-bs-content="Password must be between 6 and 12 characters or numbers."
+                                data-bs-placement="top">
+                        </div>
+
+                        <p id="errorMess"></p>
+                        <button id="signupBtn" class="btn mb-3">Sign Up</button>
+                        <span class="text-light">You have an account? <a href="./index.html">Sign In</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/signup.js"></script>
+
+</body>
+
+</html>

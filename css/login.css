@@ -1,0 +1,74 @@
+.log {
+  background-color: #b3d8ee;
+  font-family: "Titillium Web", sans-serif;
+  height: 100vh;
+}
+.row {
+  min-height: 100vh;
+}
+
+/* .row {
+  height: 100vh;
+} */
+h1 {
+  color: #17a2b8;
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+.card {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  background-color: #24353f;
+}
+.form-control {
+  background-color: #24353f;
+}
+input:focus {
+  border-color: #17a2b8;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.mytext {
+  color: #fff !important;
+}
+.form-control::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+button {
+  background-color: transparent;
+  border: 1px solid #17a2b8 !important;
+  color: #17a2b8 !important;
+  font-size: 18px !important;
+}
+button:hover {
+  color: #fff !important;
+  background-color: #17a2b8 !important;
+}
+button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+}
+span {
+  font-size: 18px;
+}
+span a {
+  color: #fff;
+  text-decoration: none;
+}
+span a:hover {
+  text-decoration: underline;
+}
+.input-group-text {
+  background-color: transparent;
+}
+
+/*media query*/
+@media (max-width: 768px) {
+  .log {
+    height: 170vh;
+  }
+  .card {
+    margin-top: 50px;
+  }
+}
